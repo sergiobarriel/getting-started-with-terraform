@@ -90,7 +90,45 @@ resource "azurerm_app_service" "namespace" {
 ```
 ### output (.tf)
 
-Pending...
+Output values is a way to capture information from created or update resources
+
+```terraform
+output "app_service_id" {
+  value = azurerm_app_service.demo.id
+}
+
+output "app_service_default_site_hostname" {
+  value = azurerm_app_service.demo.default_site_hostname
+}
+
+output "app_service_username" {
+  value = azurerm_app_service.demo.site_credential[0].username
+}
+
+output "app_service_password" {
+  value = azurerm_app_service.demo.site_credential[0].password
+}
+```
+
+```
+app_service_id = /subscriptions/416268c2-d33e-4407-9e28-6db4446ae43f/resourceGroups/MyResourceGroup/providers/Microsoft.Web/sites/demo-terraform-app-service
+
+app_service_default_site_hostname = demo-terraform-app-service.azurewebsites.net
+
+app_service_username = $demo-terraform-app-service
+
+app_service_password = veEHEMQdnhql7cxw0HyNSZzP6SRB8yq2cadvqdaw4Y6hRedX6wzzTl1DPzSc
+```
+
+To check, we can use this parameters to validate infrastructure creation
+
+```bash
+curl demo-terraform-app-service.azurewebsites.net
+
+StatusCode        : 200
+StatusDescription : OK
+...
+```
 
 ## Main commands
 
