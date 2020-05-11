@@ -110,7 +110,7 @@ output "app_service_password" {
 }
 ```
 
-When Terraform executes successfully throught `terraform apply` command, it return a set of data with resource information
+When Terraform executes successfully throught `terraform apply` command, it returns a set of data with resource information
 
 ```
 app_service_id = /subscriptions/416268c2-d33e-4407-9e28-6db4446ae43f/resourceGroups/MyResourceGroup/providers/Microsoft.Web/sites/demo-terraform-app-service
