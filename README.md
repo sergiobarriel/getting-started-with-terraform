@@ -116,7 +116,12 @@ terraform validate
 terraform validate --json
 ```
 
-An example of successful validation
+An example of **successful** validation
+
+```bash
+Success! The configuration is valid.
+```
+
 ```json
 {
   "valid": true,
@@ -125,7 +130,18 @@ An example of successful validation
   "diagnostics": []
 }
 ```
-An example of failed validation
+An example of **failed** validation
+
+```bash
+Error: Invalid expression
+
+  on main.tf line 3, in resource "azurerm_app_service_plan" "terraformdemo":
+   3:   location                = #var.azure_location
+   4:
+
+Expected the start of an expression, but found an invalid expression token.
+```
+
 ```json
 {
   "valid": false,
