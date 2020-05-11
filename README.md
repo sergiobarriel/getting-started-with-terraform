@@ -90,6 +90,8 @@ resource "azurerm_app_service" "namespace" {
 ```
 ### output (.tf)
 
+Pending...
+
 ## Main commands
 
 The complete list of Terraform commands is [available here](https://www.terraform.io/docs/commands/index.html)
@@ -167,3 +169,7 @@ Remove all resources managed by Terraform.
 ```bash
 terraform destroy
 ```
+
+## Demos
+
+On [this document](/demos/README.md) you can see the prepared demos.
