@@ -84,7 +84,11 @@ resource "azurerm_app_service" "namespace" {
 
 ## Main commands
 
+The complete list of Terraform commands is [available here](https://www.terraform.io/docs/commands/index.html)
+
 ### init
+
+Initialize a working directory containing Terraform configuration files
 
 ```bash
 terraform init
@@ -92,20 +96,65 @@ terraform init
 
 ### validate
 
+Validates configuration **without** accessing any remote services
+
+```bash
+terraform validate
+```
+
 ```bash
 terraform validate --json
 ```
 
+An example of successful validation
 ```json
+{
+  "valid": true,
+  "error_count": 0,
+  "warning_count": 0,
+  "diagnostics": []
+}
+```
+An example of failed validation
+```json
+{
+  "valid": false,
+  "error_count": 1,
+  "warning_count": 0,
+  "diagnostics": [
+    {
+      "severity": "error",
+      "summary": "Invalid expression",
+      "detail": "Expected the start of an expression, but found an invalid expression token.",
+      "range": {
+        "filename": "main.tf",
+        "start": {
+          "line": 3,
+          "column": 29,
+          "byte": 142
+        },
+        "end": {
+          "line": 4,
+          "column": 1,
+          "byte": 164
+        }
+      }
+    }
+  ]
+}
 ```
 
 ### apply
+
+Applies the changes required to reach the desired state of the configuration. This means that Terraform can create, update or remove resources.
 
 ```bash
 terraform apply
 ```
 
 ### destroy
+
+Remove all resources managed by Terraform.
 
 ```bash
 terraform destroy
