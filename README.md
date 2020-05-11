@@ -48,6 +48,7 @@ provider "azurerm" {
   features {}
 }
 ```
+Note: you can generate variables like client ID and client secret [using this guide](/docs/how-to-generate-client-credentials.md)
 
 ### main (.tf)
 
