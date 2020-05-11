@@ -1,6 +1,14 @@
 # Getting started with Terraform
 
+![new secret](/images/terraform-logo.PNG)
+
+Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently.
+
 ## Install
+
+You can see many options to install Terraform on your machine on [this document](https://learn.hashicorp.com/terraform/getting-started/install.html)
+
+We choose [chocolatey](https://chocolatey.org/) because is the easiest way.
 
 ```bash
 choco install terraform
