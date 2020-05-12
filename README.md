@@ -229,3 +229,6 @@ terraform destroy
 ## Demos
 
 On [this document](/demos/README.md) you can see the prepared demos.
+
+## Contact
+You can contact me via Twitter [@sergiobarriel](https://twitter.com/sergiobarriel)
