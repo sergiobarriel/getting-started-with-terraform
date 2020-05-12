@@ -48,7 +48,7 @@ You can generate client credentials [following this steps](/docs/how-to-generate
 
 ## Basic
 
-With this demo, we will create the following Azure resources:
+With [this demo](/demos/app-service), we will create the following Azure resources:
 
 - Resource Group
 - App Service Plan
