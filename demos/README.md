@@ -2,7 +2,7 @@
 
 ## Prepare demos
 
-For all demos on this repository, ensure to modify the variables.tf file with the correct values:
+For all demos on this repository, ensure to modify the **variables.tf** file with the correct values:
 
 ```terraform
 # subscription
@@ -32,13 +32,13 @@ variable "azure_client_secret" {
 
 ### Subscription ID
 
-You can find Subscription ID value on [Subscriptions blade option](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
+You can find *Subscription ID* value on [Subscriptions blade option](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
 
 ![Subscriptions](/images/subscription.PNG)
 
 ### Tenant ID
 
-You can find Tenant ID value by clicking on "Directory + Subscription" option on the top of the Azure Portal.
+You can find *Tenant ID* value by clicking on "Directory + Subscription" option on the top of the Azure Portal.
 
 ![Subscriptions](/images/tenant.PNG)
 
@@ -46,9 +46,9 @@ You can find Tenant ID value by clicking on "Directory + Subscription" option on
 
 You can generate client credentials [following this steps](/docs/how-to-generate-client-credentials.md).
 
-## :computer: Basic
+## Basic
 
-With [this demo](/demos/app-service), we will create the following Azure resources:
+With [this basic demo](/demos/app-service), we will create the following Azure resources:
 
 - Resource Group
 - App Service Plan
@@ -64,10 +64,10 @@ Navigate to Azure Portal and validate that the resources exists.
 
 Finally, execute `terraform destroy` command to delete this resources.
 
-## :computer: Intermediate
+## Intermediate
 
 Pending...
 
-## :computer: Advance
+## Advance
 
 Pending...
