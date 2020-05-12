@@ -46,7 +46,7 @@ You can find Tenant ID value by clicking on "Directory + Subscription" option on
 
 You can generate client credentials [following this steps](/docs/how-to-generate-client-credentials.md).
 
-## Basic
+## :computer: Basic
 
 With [this demo](/demos/app-service), we will create the following Azure resources:
 
@@ -64,10 +64,10 @@ Navigate to Azure Portal and validate that the resources exists.
 
 Finally, execute `terraform destroy` command to delete this resources.
 
-## Intermediate
+## :computer: Intermediate
 
 Pending...
 
-## Advance: 
+## :computer: Advance
 
 Pending...
