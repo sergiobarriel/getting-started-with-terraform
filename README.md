@@ -112,7 +112,7 @@ output "app_service_password" {
 
 When Terraform executes successfully throught `terraform apply` command, it returns a set of data with resource information
 
-```
+```bash
 app_service_id = /subscriptions/416268c2-d33e-4407-9e28-6db4446ae43f/resourceGroups/MyResourceGroup/providers/Microsoft.Web/sites/demo-terraform-app-service
 
 app_service_default_site_hostname = demo-terraform-app-service.azurewebsites.net
