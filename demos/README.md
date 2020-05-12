@@ -136,6 +136,51 @@ With [this basic demo](/demos/server-database), we will create the following Azu
   - 5 Azure SQL databases
 - Firewall rule
 
+### What can I learn?
+
+#### Declare list variables
+
+```terraform
+variable "azure_sql_database_names" {
+    type            = list(string)
+    default         = ["one", "two", "three", "four", "five"]
+}
+```
+
+#### Declare external data sources
+
+With this data source we can declare a data source that capture the IP of host machine
+
+```terraform
+data "http" "current_ip" {
+    url             = "http://ipv4.icanhazip.com"
+}
+```
+
+And assign value like this:
+
+```terraform
+start_ip_address    = chomp(data.http.current_ip.body)
+```
+
+#### Iteration
+
+```terraform
+resource "azurerm_sql_database" "demo" {
+  count                         = 5
+  name                          = "database-${var.azure_sql_database_names[count.index]}"
+  resource_group_name           = azurerm_resource_group.demo.name
+  location                      = var.azure_location
+  server_name                   = azurerm_sql_server.demo.name
+  tags                          = var.azure_common_tags
+  collation                     = var.azure_sql_database_collation 
+  elastic_pool_name             = azurerm_sql_elasticpool.demo.name
+}
+```
+
+With `count` meta property we can define that the current resource specification will execute N times on Azure.
+
+Note that the `name` property will be dynamic because multiple databases with the same name cannot exist.
 
 ### Steps
 
