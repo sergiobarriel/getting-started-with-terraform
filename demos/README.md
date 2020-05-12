@@ -38,7 +38,7 @@ You can find *Subscription ID* value on [Subscriptions blade option](https://por
 
 ### Tenant ID
 
-You can find *Tenant ID* value by clicking on "Directory + Subscription" option on the top of the Azure Portal.
+You can find *Tenant ID* value by clicking on [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) option.
 
 ![Subscriptions](/images/tenant.PNG)
 
@@ -66,7 +66,20 @@ Finally, execute `terraform destroy` command to delete this resources.
 
 ## Intermediate
 
-Pending...
+With [this basic demo](/demos/server-database), we will create the following Azure resources:
+
+- Resource Group
+- SQL Server & Elastic Pool
+  - 5 Azure SQL databases
+- Firewall rule
+
+### Steps
+
+Execute `terraform init` command to initialize working directory and then execute `terraform apply` to create resources.
+
+Navigate to Azure Portal and validate that the resources exists.
+
+Finally, execute `terraform destroy` command to delete this resources.
 
 ## Advance
 
