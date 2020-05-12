@@ -54,8 +54,15 @@ With [this demo](/demos/app-service), we will create the following Azure resourc
 - App Service Plan
 - App Service
 
+### Steps
 
+First, [replace variables](#prepare-demos) with your own values.
 
+Execute `terraform init` command to initialize working directory and then execute `terraform apply` to create resources.
+
+Navigate to Azure Portal and validate that the resources exists.
+
+Finally, execute `terraform destroy` command to delete this resources.
 
 ## Intermediate
 
