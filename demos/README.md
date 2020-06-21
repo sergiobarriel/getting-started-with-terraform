@@ -42,7 +42,7 @@ You can find *Tenant ID* value by clicking on [Azure Active Directory](https://p
 
 You can generate client credentials [following this steps](/docs/how-to-generate-client-credentials.md).
 
-## Basic demo
+## :blue_book: Basic demo
 
 With [this basic demo](/demos/app-service), we will create the following Azure resources:
 
@@ -127,7 +127,7 @@ Navigate to Azure Portal and validate that the resources exists.
 
 Finally, execute `terraform destroy` command to delete this resources.
 
-## Intermediate demo
+## :blue_book: Intermediate demo
 
 With [this basic demo](/demos/server-database), we will create the following Azure resources:
 
@@ -190,6 +190,6 @@ Navigate to Azure Portal and validate that the resources exists.
 
 Finally, execute `terraform destroy` command to delete this resources.
 
-## Advance
+## :blue_book: Advance demo
 
 Pending...
