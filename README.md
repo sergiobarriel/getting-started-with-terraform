@@ -18,7 +18,7 @@ choco install terraform
 
 ### variables (.tf)
 
-All variables must be inside this file. 
+If possible, all variables must be inside this file. 
 
 Terraform variable is defined on variables.tf file as:
 
@@ -29,7 +29,7 @@ variable "variable_name" {
 }
 ```
 
-The syntax for get any variable from variables.tf is:
+The syntax for get any value from variables.tf is:
 
 ```terraform
 var.variable_name
@@ -226,7 +226,7 @@ Remove all resources managed by Terraform.
 terraform destroy
 ```
 
-## Demos
+## :blue_book: Demos
 
 On [this document](/demos/README.md) you can see the prepared demos.
 
